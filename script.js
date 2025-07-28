@@ -1,14 +1,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.querySelector('#infi-list');
-  let itemCount = 0;
+ 
 
-  function addItems(n = 1) {
-    for (let i = 0; i < n; i++) {
-      itemCount++;
+  function addItems() {
+    for (let i = 1; i < 18; i++) {
+     
       const li = document.createElement('li');
       li.className = 'box';
-      li.innerText = `item ${itemCount}`;
+      li.innerText = `item ${[i]}`;
       list.appendChild(li);
     }
   }
